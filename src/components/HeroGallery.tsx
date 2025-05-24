@@ -1,8 +1,14 @@
 
 const HeroGallery = () => {
   return (
-    <div>HeroGallery</div>
-  )
+    <header>
+      <img
+        src="/src/assets/images/hero/hero.png"
+        alt="Hero Gallery"
+        className="hero-gallery"
+      />
+    </header>
+  );
 }
 
 export default HeroGallery
