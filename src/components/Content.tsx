@@ -10,7 +10,7 @@ const Content = ({
   title: string;
   description: string;
   buttonText?: string;
-  variant: 'trends' | 'products';
+  variant: 'trends' | 'products' | 'hero';
   index?: number;
 }) => {
   return (
@@ -30,11 +30,12 @@ const Content = ({
         <a
           href="#"
           className={clsx(
-            variant === 'trends'
+            variant === 'trends' || variant === 'hero'
               ? index !== 1
                 ? 'py-1 px-4 bg-black text-white hover:bg-white hover:text-black hover:border-2 border-black text-base w-[254px] text-center flex items-center justify-center mr-auto'
                 : 'text-dark text-center underline'
               : 'text-dark underline',
+            variant === 'hero' && 'mx-auto',
           )}
         >
           {buttonText}
