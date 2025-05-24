@@ -1,1 +1,68 @@
 @import "tailwindcss";
+
+
+@font-face {
+  font-family: 'DomaineSansText';
+  src: url('/src/assets/fonts/DomaineDisplay-Regular.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DomaineSansText';
+  src: url('/src/assets/fonts/DomaineDisplay-Black.otf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DomaineSansText';
+  src: url('/src/assets/fonts/DomaineDisplay-ExtraBold.otf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DomaineSansText';
+  src: url('/src/assets/fonts/DomaineDisplay-BoldItalic.otf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DomaineSansText';
+  src: url('/src/assets/fonts/DomaineDisplay-Light.otf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DomaineSansText';
+  src: url('/src/assets/fonts/DomaineDisplay-Medium.otf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DomaineSansText';
+  src: url('/src/assets/fonts/DomaineDisplay-ExtraLight.otf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'DomaineSansText', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DomaineSansText', sans-serif;
+  font-weight: 500;
+}
