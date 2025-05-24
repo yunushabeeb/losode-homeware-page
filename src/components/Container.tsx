@@ -1,9 +1,12 @@
 
-const Container = ({ children, bg}: {
+const Container = ({
+  children,
+  bg,
+}: {
   children: React.ReactNode;
-  bg: string;
+  bg?: string;
 }) => {
   return <div className={`pt-[30px] pb-4 px-8 ${bg}`}>{children}</div>;
-}
+};
 
 export default Container
