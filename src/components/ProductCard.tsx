@@ -16,8 +16,8 @@ const ProductCard = ({
       <div className="bg-[#F9F9F9]">
         <img src={image} alt={title} />
       </div>
-      <h2>{title}</h2>
-      <p className="w-full truncate">{description}</p>
+      <h2 className="uppercase truncate mt-3">{title}</h2>
+      <p className="w-full font-light truncate">{description}</p>
       <div className="flex justify-between items-center mt-4">
         <a href={href} className="underline">
           Buy Now

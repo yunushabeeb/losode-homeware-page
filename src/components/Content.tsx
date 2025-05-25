@@ -19,6 +19,7 @@ const Content = ({
         'flex flex-col items-center',
 
         variant === 'product-caption' ? 'gap-3' : 'gap-4',
+        index === 1 && 'lg:w-1/3 xl:w-6/12',
       )}
     >
       <h1

@@ -48,3 +48,44 @@ export const products = [
     price: '120,540',
   }
 ]
+
+export const socials = [
+  {
+    id: 1,
+    platform: 'Instagram',
+    icon: '/src/assets/icons/socials/instagram.png',
+    url: 'https://instagram.com/losode',
+  },
+  {
+    id: 2,
+    platform: 'Facebook',
+    icon: '/src/assets/icons/socials/facebook.png',
+    url: 'https://facebook.com/losode',
+  },
+  {
+    id: 3,
+    platform: 'Youtube',
+    icon: '/src/assets/icons/socials/youtube.png',
+    url: 'https://youtube.com/losode',
+  },
+  {
+    id: 4,
+    platform: 'X',
+    icon: '/src/assets/icons/socials/x.png',
+    url: 'https://x.com/losode',
+  },
+  {
+    id: 5,
+    platform: 'LinkedIn',
+    icon: '/src/assets/icons/socials/linkedin.png',
+    url: 'https://linkedin.com/company/losode',
+  },
+];
+
+export const gateways = [
+  'src/assets/icons/gateways/mastercard.png',
+  'src/assets/icons/gateways/jcb.png',
+  'src/assets/icons/gateways/paypal.png',
+  'src/assets/icons/gateways/visa.png',
+  'src/assets/icons/gateways/paystack.png',
+];

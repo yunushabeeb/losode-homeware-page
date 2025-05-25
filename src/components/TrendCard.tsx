@@ -18,7 +18,7 @@ const TrendCard = ({
     <section
       className={clsx(
         index === 1
-          ? 'w-screen flex flex-row items-center gap-6'
+          ? 'w-screen flex flex-col-reverse md:flex-row items-center gap-6'
           : 'w-full flex-1',
       )}
     >
@@ -27,7 +27,9 @@ const TrendCard = ({
         alt="Trend Card"
         className={clsx(
           'mb-4 object-cover object-top',
-          index === 1 ? 'w-7/12 h-[400px]' : 'h-[429px] w-full',
+          index === 1
+            ? 'w-full md:w-7/12 lg:w-11/12 h-[400px] lg:h-[450px] lg:object-center object-cover'
+            : 'h-[429px] md:h-[550px] lg:h-[600px] xl:h-[700px] w-full md:object-center',
         )}
       />
 
