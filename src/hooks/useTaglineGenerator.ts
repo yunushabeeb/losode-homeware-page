@@ -14,7 +14,6 @@ export function useTaglineGenerator() {
   const generate = async (prompt: string) => {
     setLoading(true);
     const result = await generateTagline(prompt);
-    console.log('Generated tagline:', result);
 
     try {
       // Remove code block markers if present

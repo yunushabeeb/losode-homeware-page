@@ -1,16 +1,14 @@
 import Container from './Container';
 import Content from './Content';
 import { ProductCaption } from './ProductCaption';
-import { heroInfoContent } from '../lib/data';
+import { heroInfoContent, taglinePrompts } from '../lib/data';
 import { useTaglineGenerator } from '../hooks/useTaglineGenerator';
 
 const HeroInfo = () => {
   const { tagline, loading, generate } = useTaglineGenerator();
 
   const handleGenerate = () => {
-    generate(
-      'Generate a product tagline for the Homeware category (Use this as sameple: Homeware for Inspired Living. Curated. Comfortable. Contemporary. Return just a single tagline without any additional text or explanation.The tagline should be 7 words and feel free to restructure the prompt). Add a parapgraph to same more on the topic. Also give a button text that is relevant to the tagline. The tagline should be catchy and engaging, suitable for a homeware brand. Return your result in JSON format with title, description, and buttonText fields.',
-    );
+    generate(taglinePrompts.hero);
   };
 
   // Use tagline if available, otherwise fallback to heroInfoContent

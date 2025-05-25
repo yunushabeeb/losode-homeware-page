@@ -1,43 +1,6 @@
-import { useState } from 'react';
-import { trends as defaultTrends } from '../lib/data';
+import { useTrendsGenerator } from '../hooks/useTrendsGenerator';
 import Container from './Container';
 import TrendCard from './TrendCard';
-
-// Custom hook for generating trends
-function useTrendsGenerator() {
-  const [trends, setTrends] = useState(defaultTrends.slice(0, 3));
-  const [loading, setLoading] = useState(false);
-
-  const generate = async () => {
-    setLoading(true);
-    const prompt = `
-      Generate 3 homeware trends as a JSON array.
-      Each trend should have: id, title, description, buttonText.
-      Use realistic but fictional data. The title should be short.
-      Return only the JSON array.
-    `;
-    try {
-      const res = await import('../lib/gemini').then((m) =>
-        m.generateTagline(prompt),
-      );
-      const cleaned = res.replace(/```json|```/g, '').trim();
-      const parsed = JSON.parse(cleaned);
-
-      // Use images from defaultTrends
-      const trendsWithImages = parsed.map((trend: unknown, idx: number) => ({
-        ...(typeof trend === 'object' && trend !== null ? trend : {}),
-        image: defaultTrends[idx]?.image || '',
-      }));
-
-      setTrends(trendsWithImages);
-    } catch {
-      setTrends(defaultTrends.slice(0, 3));
-    }
-    setLoading(false);
-  };
-
-  return { trends, loading, generate };
-}
 
 const TrendsCards = () => {
   const { trends, loading, generate } = useTrendsGenerator();
