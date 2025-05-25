@@ -4,7 +4,7 @@ import HeroGallery from './components/HeroGallery';
 import HeroInfo from './components/HeroInfo';
 import Nav from './components/Nav';
 import ProductCards from './components/ProductCards';
-import TaglineGenerator from './components/TaglineGenerator';
+// import TaglineGenerator from './components/TaglineGenerator';
 import TrendsCards from './components/TrendsCards';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <div>
       <Nav />
       <HeroGallery />
-      <TaglineGenerator />
+      {/* <TaglineGenerator /> */}
       <HeroInfo />
       <ProductCards />
       <TrendsCards />
