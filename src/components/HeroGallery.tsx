@@ -1,3 +1,4 @@
+import HeroSlider from './HeroSlider';
 
 const HeroGallery = () => {
   return (
@@ -5,10 +6,13 @@ const HeroGallery = () => {
       <img
         src="/src/assets/images/hero/hero.png"
         alt="Hero Gallery"
-        className="hero-gallery"
+        className="hero-gallery max-sm:hidden"
       />
+      <div className="h-[542px] overflow-hidden sm:hidden">
+        <HeroSlider />
+      </div>
     </header>
   );
-}
+};
 
-export default HeroGallery
+export default HeroGallery;
