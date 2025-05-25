@@ -14,12 +14,18 @@ const Content = ({
   index?: number;
 }) => {
   return (
-    <div className="flex flex-col items-center gap-4">
+    <div
+      className={clsx(
+        'flex flex-col items-center',
+
+        variant === 'product-caption' ? 'gap-3' : 'gap-4',
+      )}
+    >
       <h1
         className={clsx(
           'text-[28px] text-center mx-auto font-semibold',
           variant === 'trends' && 'text-left ml-0 uppercase',
-          variant === 'product-caption' && 'uppercase',
+          variant === 'product-caption' && 'uppercase text-left sm:text-center',
         )}
       >
         {title}
@@ -28,6 +34,7 @@ const Content = ({
         className={clsx(
           'text-sm',
           variant === 'products' && 'text-center w-full mx-auto sm:w-3/4',
+          variant === 'product-caption' && 'sm:text-center',
         )}
       >
         {description}
@@ -36,6 +43,7 @@ const Content = ({
         <a
           href="#"
           className={clsx(
+            'rounded-sm py-3',
             variant === 'trends' || variant === 'hero'
               ? index !== 1
                 ? 'py-2 px-4 bg-black text-white hover:bg-white hover:text-black hover:border-2 border-black text-base w-[254px] text-center flex items-center justify-center mr-auto shadow-[0_2px_0_rgba(0,0,0,0.75)]'
@@ -46,7 +54,7 @@ const Content = ({
             variant === 'trends' && 'ml-0',
             (variant === 'hero' || variant === 'product-caption') && 'mx-auto',
             variant === 'product-caption' &&
-              ' no-underline py-2 px-4 text-[#000] bg-white w-[254px] text-center shadow-[0_2px_0_rgba(0,0,0,0.75)]',
+              ' no-underline py-2 px-4 text-[#000] bg-white w-full sm:w-[254px] mx-auto text-center shadow-[0_2px_0_rgba(0,0,0,0.75)] font-light',
           )}
         >
           {buttonText}
