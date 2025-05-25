@@ -1,7 +1,5 @@
 import Slider from 'react-slick';
-import slide1 from '../assets/images/hero/slides/slide-1.png';
-import slide2 from '../assets/images/hero/slides/slide-2.png';
-import slide3 from '../assets/images/hero/slides/slide-3.png';
+import { heroSlides } from '../lib/data';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -40,15 +38,15 @@ const HeroSlider = () => {
   return (
     <div className="relative">
       <Slider {...settings}>
-        <div>
-          <img src={slide1} alt="Slide 1" className='w-full h-[542px] object-cover object-top' />
-        </div>
-        <div>
-          <img src={slide2} alt="Slide 2" className='w-full h-[542px] object-cover object-top' />
-        </div>
-        <div>
-          <img src={slide3} alt="Slide 3" className='w-full h-[542px] object-cover object-top' />
-        </div>
+        {heroSlides.map((slide, idx) => (
+          <div key={idx}>
+            <img
+              src={slide}
+              alt={`Slide ${idx + 1}`}
+              className="w-full h-[542px] object-cover object-top"
+            />
+          </div>
+        ))}
       </Slider>
       {/* Custom dot styles */}
       <style>

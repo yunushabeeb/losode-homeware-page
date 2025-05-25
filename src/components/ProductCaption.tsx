@@ -1,15 +1,16 @@
 import Content from "./Content"
+import { productCaption } from '../lib/data';
 
 export const ProductCaption = () => {
   return (
     <div className="relative">
       <img
-        src="/src/assets/images/products/product-caption.png"
+        src={productCaption.desktopImage}
         alt="Product Caption"
         className="max-sm:hidden"
       />
       <img
-        src="/src/assets/images/products/product-caption-mobile.png"
+        src={productCaption.mobileImage}
         alt="Product Caption"
         className="sm:hidden"
       />
@@ -19,9 +20,9 @@ export const ProductCaption = () => {
       >
         <div className="flex justify-center text-white mb-4 md:mb-8 absolute left-0 right-0 bottom-0  px-3">
           <Content
-            title="Contemporary Style with a Touch of Tradition"
-            description="Discover our collection of elegant Boubous that seamlessly blend modern style with timeless tradition"
-            buttonText="Shop BouBous"
+            title={productCaption.title}
+            description={productCaption.description}
+            buttonText={productCaption.buttonText}
             variant="product-caption"
           />
         </div>

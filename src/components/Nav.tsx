@@ -1,20 +1,24 @@
 import { useState } from 'react';
+import { navLinks } from '../lib/data';
 
 const Nav = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
 
   return (
-    // Change nav background and text color based on screen size
     <div className="py-2 px-4 sm:px-8 bg-white text-black md:bg-black md:text-white transition-colors duration-300">
       <nav className="flex items-center justify-between relative">
         {/* Left: Desktop Nav Links */}
         <div className="hidden md:flex flex-row items-center gap-2 font-light">
-          <a href="#">Men</a>
-          <a href="#">Women</a>
-          <a href="#" className="font-medium">
-            Homeware
-          </a>
+          {navLinks.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              className={link.className ? link.className : undefined}
+            >
+              {link.label}
+            </a>
+          ))}
         </div>
 
         {/* Mobile: Sidebar Toggle, Love Icon */}
@@ -313,27 +317,18 @@ const Nav = () => {
                 />
               </svg>
             </button>
-            <a
-              href="#"
-              className="text-black font-light text-lg"
-              onClick={() => setSidebarOpen(false)}
-            >
-              Men
-            </a>
-            <a
-              href="#"
-              className="text-black font-light text-lg"
-              onClick={() => setSidebarOpen(false)}
-            >
-              Women
-            </a>
-            <a
-              href="#"
-              className="text-black font-medium text-lg"
-              onClick={() => setSidebarOpen(false)}
-            >
-              Homeware
-            </a>
+            {navLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                className={`text-black text-lg ${
+                  link.className ? link.className : 'font-light'
+                }`}
+                onClick={() => setSidebarOpen(false)}
+              >
+                {link.label}
+              </a>
+            ))}
           </div>
           {/* Clickable overlay to close */}
           <div className="flex-1" onClick={() => setSidebarOpen(false)} />
