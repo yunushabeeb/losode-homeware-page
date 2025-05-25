@@ -128,3 +128,16 @@ export const productsSection = {
   description:
     'Transform your home with curated finds that blend African heritage and contemporary design. From cozy textiles to statement décor, our homeware collection is crafted to inspire and elevate every room. Make your space a true reflection of your style.',
 };
+
+
+export const taglinePrompts = {
+  hero: 'Generate a product tagline for the Homeware category (Use this as sameple: Homeware for Inspired Living. Curated. Comfortable. Contemporary. Return just a single tagline without any additional text or explanation.The tagline should be 7 words and feel free to restructure the prompt). Add a parapgraph to same more on the topic. Also give a button text that is relevant to the tagline. The tagline should be catchy and engaging, suitable for a homeware brand. Return your result in JSON format with title, description, and buttonText fields.',
+  trends: `Generate 3 homeware trends as a JSON array.
+      Each trend should have: id, title, description, buttonText.
+      Use realistic but fictional data. The title should be short.
+      Return only the JSON array.`,
+  products: `Generate 3 homeware products as a JSON array.
+      Each product should have: id, title, description, href, price in thousands.
+      Use realistic but fictional data.
+      Return only the JSON array.`,
+};

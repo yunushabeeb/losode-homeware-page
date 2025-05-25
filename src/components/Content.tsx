@@ -36,6 +36,7 @@ const Content = ({
           'text-sm',
           variant === 'products' && 'text-center w-full mx-auto sm:w-3/4',
           variant === 'product-caption' && 'sm:text-center',
+          variant === 'trends' && 'line-clamp-2',
         )}
       >
         {description}
