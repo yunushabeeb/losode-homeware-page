@@ -1,23 +1,13 @@
-import './App.css'
-import Footer from './components/Footer';
-import HeroGallery from './components/HeroGallery';
-import HeroInfo from './components/HeroInfo';
-import Nav from './components/Nav';
-import ProductCards from './components/ProductCards';
+import './App.css';
 // import TaglineGenerator from './components/TaglineGenerator';
-import TrendsCards from './components/TrendsCards';
+import Provider from './context/Provider';
+import Home from './Home';
 
 function App() {
   return (
-    <div>
-      <Nav />
-      <HeroGallery />
-      {/* <TaglineGenerator /> */}
-      <HeroInfo />
-      <ProductCards />
-      <TrendsCards />
-      <Footer />
-    </div>
+    <Provider>
+      <Home />
+    </Provider>
   );
 }
 

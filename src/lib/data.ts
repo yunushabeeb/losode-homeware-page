@@ -136,7 +136,7 @@ export const taglinePrompts = {
       Each trend should have: id, title, description, buttonText.
       Use realistic but fictional data. The title should be short.
       Return only the JSON array.`,
-  products: `Generate 3 homeware products as a JSON array.
+  products: `Generate 10 homeware products as a JSON array.
       Each product should have: id, title, description, href, price in thousands.
       Use realistic but fictional data.
       Return only the JSON array.`,

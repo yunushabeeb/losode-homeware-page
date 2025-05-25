@@ -1,28 +1,31 @@
-import { productsSection } from '../lib/data';
+// import { productsSection } from '../lib/data';
 import Container from './Container';
 import Content from './Content';
 import ProductCard from './ProductCard';
 import { useTaglineGenerator } from '../hooks/useTaglineGenerator';
 import { useProductsGenerator } from '../hooks/useProductsGenerator';
+import { useContext } from 'react';
+import { ProviderContext, type ContextType } from '../context/Provider';
 
 const ProductCards = () => {
+  const { products } = useContext(ProviderContext) as ContextType;
   const {
     tagline,
     loading: sectionLoading,
     generate: generateSection,
   } = useTaglineGenerator();
-  const {
-    products,
-    loading: productsLoading,
-    generate: generateProducts,
-  } = useProductsGenerator();
+  const { loading: productsLoading, generate: generateProducts } =
+    useProductsGenerator();
 
   const sectionData = tagline
     ? {
         title: tagline.title,
         description: tagline.description,
       }
-    : productsSection;
+    : {
+        title: 'Our Homeware Collection',
+        description: 'Discover our curated selection of homeware products.',
+      };
 
   return (
     <Container bg="bg-[#F9F9F9]">
@@ -60,11 +63,11 @@ const ProductCards = () => {
         {products.map((product) => (
           <ProductCard
             key={product.id}
-            title={product.title}
-            description={product.description}
-            image={product.image}
-            href={product.href}
-            price={product.price}
+            title={product.title as string}
+            description={product.description as string}
+            image={product.image as string}
+            href={product.href as string}
+            price={product.price as unknown as string}
           />
         ))}
       </div>
