@@ -1,0 +1,130 @@
+import slide1 from '../assets/images/hero/slides/slide-1.png';
+import slide2 from '../assets/images/hero/slides/slide-2.png';
+import slide3 from '../assets/images/hero/slides/slide-3.png';
+export const heroSlides = [slide1, slide2, slide3];
+
+export const trends = [
+  {
+    id: 1,
+    title: 'Elevate Your Everyday Spaces',
+    description:
+      'Bring African-inspired artistry and global design to your home. Discover statement pieces and subtle accents that transform your living space into a reflection of your unique style.',
+    buttonText: 'Shop New In',
+    image: '/src/assets/images/trends/trends-1.png',
+  },
+  {
+    id: 2,
+    title: 'Dining, Entertaining, Living',
+    description:
+      'From bold tableware to cozy throws, our curated homeware collection is designed for gatherings, relaxation, and self-expression. Make every moment at home a celebration of creativity and comfort.',
+    buttonText: 'Shop Tableware',
+    image: '/src/assets/images/trends/trends-2.png',
+  },
+  {
+    id: 3,
+    title: 'Textiles with a Story',
+    description:
+      'Layer your home with textiles that blend tradition and innovation. Discover cushions, rugs, and linens crafted with care—each piece a nod to African heritage and modern living.',
+    buttonText: 'Shop Textiles',
+    image: '/src/assets/images/trends/trends-3.png',
+  },
+];
+
+export const products = [
+  {
+    id: 1,
+    title: 'Handwoven Throw Blanket',
+    description:
+      'Add warmth and texture to your space with this artisan-crafted throw, inspired by African weaving traditions.',
+    image: '/src/assets/images/products/product-1.png',
+    href: '#',
+    price: '18,540',
+  },
+  {
+    id: 2,
+    title: 'Sculpted Ceramic Vase',
+    description:
+      'A modern vase with organic lines—perfect for fresh flowers or as a statement piece on your table or shelf.',
+    image: '/src/assets/images/products/product-2.png',
+    href: '#',
+    price: '25,540',
+  },
+  {
+    id: 3,
+    title: 'Signature Cushion Cover',
+    description:
+      'Vibrant patterns meet soft comfort. This cushion cover brings a pop of color and culture to any room.',
+    image: '/src/assets/images/products/product-3.png',
+    href: '#',
+    price: '12,540',
+  },
+];
+
+export const socials = [
+  {
+    id: 1,
+    platform: 'Instagram',
+    icon: '/src/assets/icons/socials/instagram.png',
+    url: 'https://instagram.com/losode',
+  },
+  {
+    id: 2,
+    platform: 'Facebook',
+    icon: '/src/assets/icons/socials/facebook.png',
+    url: 'https://facebook.com/losode',
+  },
+  {
+    id: 3,
+    platform: 'Youtube',
+    icon: '/src/assets/icons/socials/youtube.png',
+    url: 'https://youtube.com/losode',
+  },
+  {
+    id: 4,
+    platform: 'X',
+    icon: '/src/assets/icons/socials/x.png',
+    url: 'https://x.com/losode',
+  },
+  {
+    id: 5,
+    platform: 'LinkedIn',
+    icon: '/src/assets/icons/socials/linkedin.png',
+    url: 'https://linkedin.com/company/losode',
+  },
+];
+
+export const gateways = [
+  'src/assets/icons/gateways/mastercard.png',
+  'src/assets/icons/gateways/jcb.png',
+  'src/assets/icons/gateways/paypal.png',
+  'src/assets/icons/gateways/visa.png',
+  'src/assets/icons/gateways/paystack.png',
+];
+
+export const heroInfoContent = {
+  title: 'Homeware for Inspired Living. Curated. Comfortable. Contemporary.',
+  description:
+    'Welcome to Losode Homeware—where African creativity meets global design. Explore décor, textiles, and essentials that bring warmth, style, and personality to every corner of your home. Discover pieces that turn your house into a haven.',
+  buttonText: 'Shop Homeware',
+};
+
+export const navLinks = [
+  { label: 'Men', href: '#' },
+  { label: 'Women', href: '#' },
+  { label: 'Homeware', href: '#', className: 'font-medium' },
+];
+
+export const productCaption = {
+  desktopImage: '/src/assets/images/products/product-caption.png',
+  mobileImage: '/src/assets/images/products/product-caption-mobile.png',
+  title: 'Modern Home, Timeless Comfort',
+  description:
+    'Explore our collection of homeware essentials—where modern aesthetics meet everyday practicality. Refresh your space with pieces designed for comfort, style, and lasting quality.',
+  buttonText: 'Shop Homeware',
+};
+
+export const productsSection = {
+  title: 'Redefine Your Space',
+  description:
+    'Transform your home with curated finds that blend African heritage and contemporary design. From cozy textiles to statement décor, our homeware collection is crafted to inspire and elevate every room. Make your space a true reflection of your style.',
+};
