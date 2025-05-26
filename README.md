@@ -114,7 +114,7 @@ src/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/losode-homeware-page.git
+git clone https://github.com/yunushabeeb/losode-homeware-page.git
 cd losode-homeware-page
 
 # Install dependencies
