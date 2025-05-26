@@ -23,7 +23,7 @@ const ProductCard = ({
       <h2 className="uppercase text-xl tracking-wider truncate mt-5 mb-2">
         {title}
       </h2>
-      <p className="w-full font-light truncate">{description}</p>
+      <p className="w-full font-light line-clamp-2">{description}</p>
       <div className="flex justify-between items-center mt-4">
         <a href={href} className="underline">
           Buy Now
