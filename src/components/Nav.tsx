@@ -274,6 +274,8 @@ const Nav = () => {
                 placeholder="Search"
                 className="absolute right-0 top-0 mt-8 w-40 px-2 py-1 rounded bg-white text-black outline-none shadow transition-all duration-200"
                 style={{ zIndex: 20 }}
+                value={search}
+                onChange={handleSearch}
                 onBlur={() => setSearchOpen(false)}
               />
             )}
