@@ -113,12 +113,12 @@ const Nav = () => {
         {/* Center: Logo */}
         <div className="flex-1 flex items-center justify-center">
           <img
-            src="/src/assets/images/logo-white-no-tag.svg"
+            src="/assets/images/logo-white-no-tag.svg"
             alt="Losode Logo"
             className="w-32 sm:w-36 mb-0 max-md:hidden"
           />
           <img
-            src="/src/assets/images/logo-black.png"
+            src="/assets/images/logo-black.png"
             alt="Losode Logo"
             className="w-32 sm:w-36 mb-0 md:hidden"
           />
