@@ -58,6 +58,69 @@ export const products = [
     href: '#',
     price: '12,540',
   },
+  {
+    id: 4,
+    title: 'Linen Kimono Robe',
+    description:
+      'Relax in style with this lightweight linen kimono, perfect for lounging or layering over your favorite outfit.',
+    image: '/src/assets/images/products/product-1.png',
+    href: '#',
+    price: '22,000',
+  },
+  {
+    id: 5,
+    title: 'Woven Cotton Pajama Set',
+    description:
+      'Experience comfort and breathability with this soft cotton pajama set, featuring subtle African-inspired patterns.',
+    image: '/src/assets/images/products/product-2.png',
+    href: '#',
+    price: '19,500',
+  },
+  {
+    id: 6,
+    title: 'Embroidered House Slippers',
+    description:
+      'Step into luxury with these cozy slippers, adorned with intricate embroidery for a touch of elegance at home.',
+    image: '/src/assets/images/products/product-3.png',
+    href: '#',
+    price: '8,900',
+  },
+  {
+    id: 7,
+    title: 'Classic Bathrobe',
+    description:
+      'Wrap yourself in plush comfort after a bath with this classic robe, designed for everyday relaxation.',
+    image: '/src/assets/images/products/product-1.png',
+    href: '#',
+    price: '16,800',
+  },
+  {
+    id: 8,
+    title: 'Patterned Lounge Pants',
+    description:
+      'Unwind in these relaxed-fit lounge pants, featuring bold prints inspired by African textiles.',
+    image: '/src/assets/images/products/product-2.png',
+    href: '#',
+    price: '13,200',
+  },
+  {
+    id: 9,
+    title: 'Soft Cotton Nightshirt',
+    description:
+      'Enjoy restful nights in this ultra-soft cotton nightshirt, blending comfort with contemporary style.',
+    image: '/src/assets/images/products/product-3.png',
+    href: '#',
+    price: '11,750',
+  },
+  {
+    id: 10,
+    title: 'Heritage Print Headwrap',
+    description:
+      'Add flair to your homewear look with this versatile headwrap, showcasing vibrant heritage prints.',
+    image: '/src/assets/images/products/product-1.png',
+    href: '#',
+    price: '6,500',
+  },
 ];
 
 export const socials = [
