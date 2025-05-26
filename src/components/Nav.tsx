@@ -38,7 +38,7 @@ const Nav = () => {
     <div className="py-4 px-4 sm:px-10 bg-white text-black md:bg-black md:text-white transition-colors duration-300">
       <nav className="flex items-center justify-between relative">
         {/* Left: Desktop Nav Links */}
-        <div className="hidden md:flex flex-row text-xl items-center gap-2 font-light">
+        <div className="hidden md:flex flex-row text-xl items-center gap-2 lg:gap-3 font-light">
           {navLinks.map((link) => (
             <a
               key={link.label}
@@ -154,7 +154,7 @@ const Nav = () => {
             <input
               type="text"
               placeholder="Search"
-              className="ml-2 py-1 outline-none bg-transparent text-black min-w-[250px]"
+              className="ml-2 py-1 outline-none bg-transparent text-black w-[150px]  lg:max-w-[250px]"
               value={search}
               onChange={handleSearch}
             />

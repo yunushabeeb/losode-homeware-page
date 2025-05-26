@@ -26,11 +26,12 @@ const Content = ({
         className={clsx(
           'text-[28px] text-center mx-auto font-semibold',
           variant === 'trends' &&
-            'text-left lg:text-[38px] ml-0 truncate uppercase',
+            'text-left lg:text-[32px] ml-0 uppercase w-full',
           variant === 'product-caption' &&
             'uppercase lg:text-[38px] text-left sm:text-center',
           variant === 'hero' && 'lg:text-4xl',
           variant === 'products' && 'lg:text-4xl',
+          variant === 'trends' && index !== 1 ? 'line-clamp-1' : 'line-clamp-2',
         )}
       >
         {title}
