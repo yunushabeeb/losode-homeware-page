@@ -1,6 +1,6 @@
-import slide1 from '../assets/images/hero/slides/slide-1.png';
-import slide2 from '../assets/images/hero/slides/slide-2.png';
-import slide3 from '../assets/images/hero/slides/slide-3.png';
+import slide1 from '/assets/images/hero/slides/slide-1.png';
+import slide2 from '/assets/images/hero/slides/slide-2.png';
+import slide3 from '/assets/images/hero/slides/slide-3.png';
 export const heroSlides = [slide1, slide2, slide3];
 
 export const trends = [
@@ -10,7 +10,7 @@ export const trends = [
     description:
       'Bring African-inspired artistry and global design to your home. Discover statement pieces and subtle accents that transform your living space into a reflection of your unique style.',
     buttonText: 'Shop New In',
-    image: '/src/assets/images/trends/trends-1.png',
+    image: '/assets/images/trends/trends-1.png',
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ export const trends = [
     description:
       'From bold tableware to cozy throws, our curated homeware collection is designed for gatherings, relaxation, and self-expression. Make every moment at home a celebration of creativity and comfort.',
     buttonText: 'Shop Tableware',
-    image: '/src/assets/images/trends/trends-4.jpg',
+    image: '/assets/images/trends/trends-4.jpg',
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ export const trends = [
     description:
       'Layer your home with textiles that blend tradition and innovation. Discover cushions, rugs, and linens crafted with care—each piece a nod to African heritage and modern living.',
     buttonText: 'Shop Textiles',
-    image: '/src/assets/images/trends/trends-3.png',
+    image: '/assets/images/trends/trends-3.png',
   },
 ];
 
@@ -36,7 +36,7 @@ export const products = [
     title: 'Handwoven Throw Blanket',
     description:
       'Add warmth and texture to your space with this artisan-crafted throw, inspired by African weaving traditions.',
-    image: '/src/assets/images/products/product-1.png',
+    image: '/assets/images/products/product-1.png',
     href: '#',
     price: 18540,
   },
@@ -45,7 +45,7 @@ export const products = [
     title: 'Sculpted Ceramic Vase',
     description:
       'A modern vase with organic lines—perfect for fresh flowers or as a statement piece on your table or shelf.',
-    image: '/src/assets/images/products/product-2.png',
+    image: '/assets/images/products/product-2.png',
     href: '#',
     price: 25540,
   },
@@ -54,7 +54,7 @@ export const products = [
     title: 'Signature Cushion Cover',
     description:
       'Vibrant patterns meet soft comfort. This cushion cover brings a pop of color and culture to any room.',
-    image: '/src/assets/images/products/product-3.png',
+    image: '/assets/images/products/product-3.png',
     href: '#',
     price: 12540,
   },
@@ -63,7 +63,7 @@ export const products = [
     title: 'Linen Kimono Robe',
     description:
       'Relax in style with this lightweight linen kimono, perfect for lounging or layering over your favorite outfit.',
-    image: '/src/assets/images/products/product-4.png',
+    image: '/assets/images/products/product-4.png',
     href: '#',
     price: 22000,
   },
@@ -72,7 +72,7 @@ export const products = [
     title: 'Woven Cotton Pajama Set',
     description:
       'Experience comfort and breathability with this soft cotton pajama set, featuring subtle African-inspired patterns.',
-    image: '/src/assets/images/products/product-5.png',
+    image: '/assets/images/products/product-5.png',
     href: '#',
     price: 19500,
   },
@@ -81,7 +81,7 @@ export const products = [
     title: 'Embroidered House Slippers',
     description:
       'Step into luxury with these cozy slippers, adorned with intricate embroidery for a touch of elegance at home.',
-    image: '/src/assets/images/products/product-6.png',
+    image: '/assets/images/products/product-6.png',
     href: '#',
     price: 8900,
   },
@@ -90,7 +90,7 @@ export const products = [
     title: 'Classic Bathrobe',
     description:
       'Wrap yourself in plush comfort after a bath with this classic robe, designed for everyday relaxation.',
-    image: '/src/assets/images/products/product-1.png',
+    image: '/assets/images/products/product-1.png',
     href: '#',
     price: 16800,
   },
@@ -99,7 +99,7 @@ export const products = [
     title: 'Patterned Lounge Pants',
     description:
       'Unwind in these relaxed-fit lounge pants, featuring bold prints inspired by African textiles.',
-    image: '/src/assets/images/products/product-2.png',
+    image: '/assets/images/products/product-2.png',
     href: '#',
     price: 13200,
   },
@@ -108,7 +108,7 @@ export const products = [
     title: 'Soft Cotton Nightshirt',
     description:
       'Enjoy restful nights in this ultra-soft cotton nightshirt, blending comfort with contemporary style.',
-    image: '/src/assets/images/products/product-3.png',
+    image: '/assets/images/products/product-3.png',
     href: '#',
     price: 11750,
   },
@@ -117,7 +117,7 @@ export const products = [
     title: 'Heritage Print Headwrap',
     description:
       'Add flair to your homewear look with this versatile headwrap, showcasing vibrant heritage prints.',
-    image: '/src/assets/images/products/product-4.png',
+    image: '/assets/images/products/product-4.png',
     href: '#',
     price: 6500,
   },
@@ -127,31 +127,31 @@ export const socials = [
   {
     id: 1,
     platform: 'Instagram',
-    icon: '/src/assets/icons/socials/instagram.png',
+    icon: '/assets/icons/socials/instagram.png',
     url: 'https://instagram.com/losode',
   },
   {
     id: 2,
     platform: 'Facebook',
-    icon: '/src/assets/icons/socials/facebook.png',
+    icon: '/assets/icons/socials/facebook.png',
     url: 'https://facebook.com/losode',
   },
   {
     id: 3,
     platform: 'Youtube',
-    icon: '/src/assets/icons/socials/youtube.png',
+    icon: '/assets/icons/socials/youtube.png',
     url: 'https://youtube.com/losode',
   },
   {
     id: 4,
     platform: 'X',
-    icon: '/src/assets/icons/socials/x.png',
+    icon: '/assets/icons/socials/x.png',
     url: 'https://x.com/losode',
   },
   {
     id: 5,
     platform: 'LinkedIn',
-    icon: '/src/assets/icons/socials/linkedin.png',
+    icon: '/assets/icons/socials/linkedin.png',
     url: 'https://linkedin.com/company/losode',
   },
 ];
@@ -178,8 +178,8 @@ export const navLinks = [
 ];
 
 export const productCaption = {
-  desktopImage: '/src/assets/images/products/product-caption.png',
-  mobileImage: '/src/assets/images/products/product-caption-mobile.png',
+  desktopImage: '/assets/images/products/product-caption.png',
+  mobileImage: '/assets/images/products/product-caption-mobile.png',
   title: 'Modern Home, Timeless Comfort',
   description:
     'Explore our collection of homeware essentials—where modern aesthetics meet everyday practicality. Refresh your space with pieces designed for comfort, style, and lasting quality.',
@@ -191,7 +191,6 @@ export const productsSection = {
   description:
     'Transform your home with curated finds that blend African heritage and contemporary design. From cozy textiles to statement décor, our homeware collection is crafted to inspire and elevate every room. Make your space a true reflection of your style.',
 };
-
 
 export const taglinePrompts = {
   hero: 'Generate a product tagline for the Homeware category (Use this as sameple: Homeware for Inspired Living. Curated. Comfortable. Contemporary. Return just a single tagline without any additional text or explanation.The tagline should be 7 words and feel free to restructure the prompt). Add a parapgraph to same more on the topic. Also give a button text that is relevant to the tagline. The tagline should be catchy and engaging, suitable for a homeware brand. Return your result in JSON format with title, description, and buttonText fields.',

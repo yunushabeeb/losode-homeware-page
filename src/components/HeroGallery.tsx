@@ -4,7 +4,7 @@ const HeroGallery = () => {
   return (
     <header>
       <img
-        src="/src/assets/images/hero/hero.png"
+        src="/assets/images/hero/hero.png"
         alt="Hero Gallery"
         className="hero-gallery max-sm:hidden"
       />

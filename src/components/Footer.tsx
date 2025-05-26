@@ -10,7 +10,7 @@ const Footer = () => {
             {/* Column 1 */}
             <div className="min-w-[220px]">
               <img
-                src="/src/assets/images/logo-white-no-tag.svg"
+                src="/assets/images/logo-white-no-tag.svg"
                 alt="Losode Logo"
                 className="w-32 mb-5 -ms-4 -mt-4"
               />
