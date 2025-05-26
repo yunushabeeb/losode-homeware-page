@@ -157,11 +157,11 @@ export const socials = [
 ];
 
 export const gateways = [
-  'src/assets/icons/gateways/mastercard.png',
-  'src/assets/icons/gateways/jcb.png',
-  'src/assets/icons/gateways/paypal.png',
-  'src/assets/icons/gateways/visa.png',
-  'src/assets/icons/gateways/paystack.png',
+  '/assets/icons/gateways/mastercard.png',
+  '/assets/icons/gateways/jcb.png',
+  '/assets/icons/gateways/paypal.png',
+  '/assets/icons/gateways/visa.png',
+  '/assets/icons/gateways/paystack.png',
 ];
 
 export const heroInfoContent = {
