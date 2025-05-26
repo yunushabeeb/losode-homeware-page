@@ -25,18 +25,24 @@ const Content = ({
       <h1
         className={clsx(
           'text-[28px] text-center mx-auto font-semibold',
-          variant === 'trends' && 'text-left ml-0 uppercase',
-          variant === 'product-caption' && 'uppercase text-left sm:text-center',
+          variant === 'trends' && 'text-left lg:text-[38px] ml-0 uppercase',
+          variant === 'product-caption' &&
+            'uppercase lg:text-[38px] text-left sm:text-center',
+          variant === 'hero' && 'lg:text-4xl',
+          variant === 'products' && 'lg:text-4xl',
         )}
       >
         {title}
       </h1>
       <p
         className={clsx(
-          'text-md',
-          variant === 'products' && 'text-center w-full mx-auto sm:w-3/4',
-          variant === 'product-caption' && 'sm:text-center',
-          variant === 'trends' && 'line-clamp-2',
+          'text-md tracking-wider',
+          variant === 'products' &&
+            'text-center lg:text-lg w-full mx-auto sm:w-3/4',
+          variant === 'product-caption' &&
+            'sm:text-center lg:text-lg mt-2 mb-3',
+          variant === 'trends' && 'line-clamp-4 lg:text-lg',
+          variant === 'hero' && 'lg:text-xl',
         )}
       >
         {description}
@@ -56,7 +62,7 @@ const Content = ({
             variant === 'trends' && 'ml-0',
             (variant === 'hero' || variant === 'product-caption') && 'mx-auto',
             variant === 'product-caption' &&
-              ' no-underline py-2 px-4 text-[#000] bg-white hover:bg-black hover:text-white w-full sm:w-[254px] mx-auto text-center shadow-[0_2px_0_rgba(0,0,0,0.75)] font-light',
+              ' no-underline py-2 px-4 text-[#000] bg-white hover:bg-black border hover:text-white w-full sm:w-[254px] mx-auto text-center shadow-[0_2px_0_rgba(0,0,0,0.75)] font-light',
           )}
         >
           {buttonText}

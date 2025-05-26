@@ -3,7 +3,7 @@ import Container from './Container';
 
 const Footer = () => {
   return (
-    <footer className="text-sm text-white">
+    <footer className="text-md lg:text-lg text-white">
       <div className="bg-black py-10">
         <Container>
           <div className="mx-auto flex gap-10 flex-wrap justify-between">
@@ -12,7 +12,7 @@ const Footer = () => {
               <img
                 src="/assets/images/logo-white-no-tag.svg"
                 alt="Losode Logo"
-                className="w-32 mb-5 -ms-4 -mt-4"
+                className="w-32 lg:w-36 mb-5 -ms-4 -mt-4"
               />
               <div className="my-6 mb-2">
                 <div className="font-semibold text-[#B5B5B5]">Email us:</div>
@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
             {/* Column 2 */}
             <div className="min-w-[220px]">
-              <div className="font-bold text-lg text-center mb-5">
+              <div className="font-bold text-lg lg:text-xl text-center mb-5">
                 Useful Information
               </div>
               <div className="flex gap-12 text-[#B5B5B5]">
@@ -99,8 +99,10 @@ const Footer = () => {
             </div>
             {/* Column 3 */}
             <div className="min-w-[220px]">
-              <div className="font-bold text-lg mb-5">Stay in touch</div>
-              <form action="#" className="h-12 flex mb-12">
+              <div className="font-bold text-lg lg:text-xl mb-5">
+                Stay in touch
+              </div>
+              <form action="#" className="h-12 flex flex-wrap mb-12">
                 <input
                   type="text"
                   name=""
@@ -138,7 +140,7 @@ const Footer = () => {
         <div className="text-black flex flex-row items-center text-base justify-between py-4">
           <p>
             &copy; 2025, Losode Inc.{' '}
-            <span className="text-[#B5B5B5] font-black">
+            <span className="text-[#B5B5B5] font-bold">
               Always Beyond Borders
             </span>
           </p>

@@ -7,7 +7,7 @@ const Container = ({
   bg?: string;
 }) => {
   return (
-    <div className={`pt-[30px] pb-4 px-4 md:px-8 lg:px-12 ${bg}`}>
+    <div className={`pt-[30px] pb-4 px-4 md:px-8 lg:px-16 ${bg}`}>
       {children}
     </div>
   );
