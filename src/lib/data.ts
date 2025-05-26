@@ -38,7 +38,7 @@ export const products = [
       'Add warmth and texture to your space with this artisan-crafted throw, inspired by African weaving traditions.',
     image: '/src/assets/images/products/product-1.png',
     href: '#',
-    price: '18,540',
+    price: 18540,
   },
   {
     id: 2,
@@ -47,7 +47,7 @@ export const products = [
       'A modern vase with organic lines—perfect for fresh flowers or as a statement piece on your table or shelf.',
     image: '/src/assets/images/products/product-2.png',
     href: '#',
-    price: '25,540',
+    price: 25540,
   },
   {
     id: 3,
@@ -56,7 +56,7 @@ export const products = [
       'Vibrant patterns meet soft comfort. This cushion cover brings a pop of color and culture to any room.',
     image: '/src/assets/images/products/product-3.png',
     href: '#',
-    price: '12,540',
+    price: 12540,
   },
   {
     id: 4,
@@ -65,7 +65,7 @@ export const products = [
       'Relax in style with this lightweight linen kimono, perfect for lounging or layering over your favorite outfit.',
     image: '/src/assets/images/products/product-1.png',
     href: '#',
-    price: '22,000',
+    price: 22000,
   },
   {
     id: 5,
@@ -74,7 +74,7 @@ export const products = [
       'Experience comfort and breathability with this soft cotton pajama set, featuring subtle African-inspired patterns.',
     image: '/src/assets/images/products/product-2.png',
     href: '#',
-    price: '19,500',
+    price: 19500,
   },
   {
     id: 6,
@@ -83,7 +83,7 @@ export const products = [
       'Step into luxury with these cozy slippers, adorned with intricate embroidery for a touch of elegance at home.',
     image: '/src/assets/images/products/product-3.png',
     href: '#',
-    price: '8,900',
+    price: 8900,
   },
   {
     id: 7,
@@ -92,7 +92,7 @@ export const products = [
       'Wrap yourself in plush comfort after a bath with this classic robe, designed for everyday relaxation.',
     image: '/src/assets/images/products/product-1.png',
     href: '#',
-    price: '16,800',
+    price: 16800,
   },
   {
     id: 8,
@@ -101,7 +101,7 @@ export const products = [
       'Unwind in these relaxed-fit lounge pants, featuring bold prints inspired by African textiles.',
     image: '/src/assets/images/products/product-2.png',
     href: '#',
-    price: '13,200',
+    price: 13200,
   },
   {
     id: 9,
@@ -110,7 +110,7 @@ export const products = [
       'Enjoy restful nights in this ultra-soft cotton nightshirt, blending comfort with contemporary style.',
     image: '/src/assets/images/products/product-3.png',
     href: '#',
-    price: '11,750',
+    price: 11750,
   },
   {
     id: 10,
@@ -119,7 +119,7 @@ export const products = [
       'Add flair to your homewear look with this versatile headwrap, showcasing vibrant heritage prints.',
     image: '/src/assets/images/products/product-1.png',
     href: '#',
-    price: '6,500',
+    price: 6500,
   },
 ];
 
