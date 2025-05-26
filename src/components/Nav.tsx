@@ -7,7 +7,6 @@ const Nav = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [search, setSearch] = useState('');
-  // const [results, setResults] = useState(navLinks);
   const { setIsSearching, products, setProducts } = useContext(
     ProviderContext,
   ) as ContextType;
