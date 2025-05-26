@@ -94,12 +94,12 @@ src/
 ├── components/       # Modular, reusable UI components
 ├── hooks/            # AI-related custom hooks
 ├── context/          # React Context setup
-├── pages/            # Homepage and core views
-├── utils/            # AI helpers, config
-├── styles/           # Tailwind and custom styles
+├── lib/              # AI helpers, config
+├── App.css           # Tailwind and custom styles
+├── Home.tsx          # Main component
 └── App.tsx           # Root component
 
-````
+```
 
 ---
 
