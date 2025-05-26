@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-import { products as defaultProducts } from '../lib/data';
+import { products as defaultProducts, taglinePrompts } from '../lib/data';
 import { ProviderContext, type ContextType } from '../context/Provider';
 
 // Custom hook for generating products
@@ -9,12 +9,7 @@ export function useProductsGenerator() {
 
   const generate = async () => {
     setLoading(true);
-    const prompt = `
-      Generate 3 homeware products as a JSON array.
-      Each product should have: id, title, description, href, price in thousands.
-      Use realistic but fictional data.
-      Return only the JSON array.
-    `;
+    const prompt = taglinePrompts.products;
     try {
       const res = await import('../lib/gemini').then((m) =>
         m.generateTagline(prompt),
