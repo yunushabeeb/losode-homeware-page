@@ -18,7 +18,7 @@ export const trends = [
     description:
       'From bold tableware to cozy throws, our curated homeware collection is designed for gatherings, relaxation, and self-expression. Make every moment at home a celebration of creativity and comfort.',
     buttonText: 'Shop Tableware',
-    image: '/src/assets/images/trends/trends-2.png',
+    image: '/src/assets/images/trends/trends-4.jpg',
   },
   {
     id: 3,
@@ -63,7 +63,7 @@ export const products = [
     title: 'Linen Kimono Robe',
     description:
       'Relax in style with this lightweight linen kimono, perfect for lounging or layering over your favorite outfit.',
-    image: '/src/assets/images/products/product-1.png',
+    image: '/src/assets/images/products/product-4.png',
     href: '#',
     price: 22000,
   },
@@ -72,7 +72,7 @@ export const products = [
     title: 'Woven Cotton Pajama Set',
     description:
       'Experience comfort and breathability with this soft cotton pajama set, featuring subtle African-inspired patterns.',
-    image: '/src/assets/images/products/product-2.png',
+    image: '/src/assets/images/products/product-5.png',
     href: '#',
     price: 19500,
   },
@@ -81,7 +81,7 @@ export const products = [
     title: 'Embroidered House Slippers',
     description:
       'Step into luxury with these cozy slippers, adorned with intricate embroidery for a touch of elegance at home.',
-    image: '/src/assets/images/products/product-3.png',
+    image: '/src/assets/images/products/product-6.png',
     href: '#',
     price: 8900,
   },
@@ -117,7 +117,7 @@ export const products = [
     title: 'Heritage Print Headwrap',
     description:
       'Add flair to your homewear look with this versatile headwrap, showcasing vibrant heritage prints.',
-    image: '/src/assets/images/products/product-1.png',
+    image: '/src/assets/images/products/product-4.png',
     href: '#',
     price: 6500,
   },
