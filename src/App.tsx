@@ -1,5 +1,4 @@
 import './App.css';
-// import TaglineGenerator from './components/TaglineGenerator';
 import Provider from './context/Provider';
 import Home from './Home';
 

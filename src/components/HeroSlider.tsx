@@ -43,6 +43,8 @@ const HeroSlider = () => {
             <img
               src={slide}
               alt={`Slide ${idx + 1}`}
+              height={550}
+              loading="lazy"
               className="w-full h-[542px] object-cover object-top"
             />
           </div>

@@ -7,7 +7,6 @@ const Nav = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [search, setSearch] = useState('');
-  // const [results, setResults] = useState(navLinks);
   const { setIsSearching, products, setProducts } = useContext(
     ProviderContext,
   ) as ContextType;
@@ -36,10 +35,10 @@ const Nav = () => {
   };
 
   return (
-    <div className="py-2 px-4 sm:px-8 bg-white text-black md:bg-black md:text-white transition-colors duration-300">
+    <div className="py-4 px-4 sm:px-10 bg-white text-black md:bg-black md:text-white transition-colors duration-300">
       <nav className="flex items-center justify-between relative">
         {/* Left: Desktop Nav Links */}
-        <div className="hidden md:flex flex-row items-center gap-2 font-light">
+        <div className="hidden md:flex flex-row text-xl items-center gap-2 font-light">
           {navLinks.map((link) => (
             <a
               key={link.label}
@@ -115,7 +114,7 @@ const Nav = () => {
           <img
             src="/assets/images/logo-white-no-tag.svg"
             alt="Losode Logo"
-            className="w-32 sm:w-36 mb-0 max-md:hidden"
+            className="w-38 sm:w-44 mb-0 max-md:hidden"
           />
           <img
             src="/assets/images/logo-black.png"
@@ -155,7 +154,7 @@ const Nav = () => {
             <input
               type="text"
               placeholder="Search"
-              className="ml-2 outline-none bg-transparent text-black"
+              className="ml-2 py-1 outline-none bg-transparent text-black min-w-[250px]"
               value={search}
               onChange={handleSearch}
             />
@@ -272,7 +271,7 @@ const Nav = () => {
                 autoFocus
                 type="text"
                 placeholder="Search"
-                className="absolute right-0 top-0 mt-8 w-40 px-2 py-1 rounded bg-white text-black outline-none shadow transition-all duration-200"
+                className="absolute right-0 top-0 mt-8 w-40 px-2 py-2 rounded bg-white text-black outline-none shadow transition-all duration-200"
                 style={{ zIndex: 20 }}
                 value={search}
                 onChange={handleSearch}

@@ -35,7 +35,7 @@ export const ProductCaption = () => {
         className="absolute inset-0"
         style={{ backgroundColor: 'rgba(0, 0, 0, 0.4)' }}
       >
-        <div className="flex justify-center text-white mb-4 md:mb-8 absolute left-0 right-0 bottom-0 px-3">
+        <div className="flex justify-center text-white mb-4 md:mb-8 absolute left-0 right-0 bottom-0 px-3 max-w-[900px] mx-auto">
           <Content
             title={contentData.title}
             description={contentData.description}

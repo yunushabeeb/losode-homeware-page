@@ -23,7 +23,7 @@ const HeroInfo = () => {
   return (
     <Container bg="bg-white">
       <div className="relative">
-        <div className="w-full text-center mx-auto sm:w-3/4 max-w-[900px] mb-8 sm:hidden md:flex">
+        <div className="w-full text-center mx-auto sm:w-3/4 max-w-[1200px] mb-8 sm:hidden md:flex">
           <Content
             title={contentData.title}
             description={contentData.description}

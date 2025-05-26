@@ -20,31 +20,24 @@ export interface ContextType {
 export const ProviderContext = createContext<ContextType | undefined>(undefined);
 
  const Provider = ({ children }: { children: ReactNode }) => {
-  const [isSearching, setIsSearching] = useState(false);
-  const [products, setProducts] = useState<Product[]>(
-    defaultProducts.map((item) => ({
-          ...item,
-          id: String(item.id),
-          name: item.title,
-          price: Number(item.price),
-          imageUrl: item.image,
-          description: item.description,
-        }))
-  );
+   const [isSearching, setIsSearching] = useState(false);
+   const [products, setProducts] = useState<Product[]>(
+     defaultProducts.map((item) => ({
+       ...item,
+       id: String(item.id),
+       name: item.title,
+       price: Number(item.price),
+       imageUrl: item.image,
+       description: item.description,
+     })),
+   );
 
-
-  return (
-    <ProviderContext.Provider value={{ products, setProducts, isSearching, setIsSearching }}>
-      {children}
-    </ProviderContext.Provider>
-  );
-};
-
-// export const useProducts = () => {
-//   const context = useContext(ProductsContext);
-//   if (!context) {
-//     throw new Error('useProducts must be used within a ProductsProvider');
-//   }
-//   return context;
-// };</ProductsContext.Provider>
+   return (
+     <ProviderContext.Provider
+       value={{ products, setProducts, isSearching, setIsSearching }}
+     >
+       {children}
+     </ProviderContext.Provider>
+   );
+ };
 export default Provider;
