@@ -1,28 +1,32 @@
-import { productsSection } from '../lib/data';
+// import { productsSection } from '../lib/data';
 import Container from './Container';
 import Content from './Content';
 import ProductCard from './ProductCard';
 import { useTaglineGenerator } from '../hooks/useTaglineGenerator';
 import { useProductsGenerator } from '../hooks/useProductsGenerator';
+import { useContext } from 'react';
+import { ProviderContext, type ContextType } from '../context/Provider';
 
 const ProductCards = () => {
+  const { products, isSearching } = useContext(ProviderContext) as ContextType;
+
   const {
     tagline,
     loading: sectionLoading,
     generate: generateSection,
   } = useTaglineGenerator();
-  const {
-    products,
-    loading: productsLoading,
-    generate: generateProducts,
-  } = useProductsGenerator();
+  const { loading: productsLoading, generate: generateProducts } =
+    useProductsGenerator();
 
   const sectionData = tagline
     ? {
         title: tagline.title,
         description: tagline.description,
       }
-    : productsSection;
+    : {
+        title: 'Our Homeware Collection',
+        description: 'Discover our curated selection of homeware products.',
+      };
 
   return (
     <Container bg="bg-[#F9F9F9]">
@@ -57,17 +61,48 @@ const ProductCards = () => {
       </section>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-8">
-        {products.map((product) => (
-          <ProductCard
-            key={product.id}
-            title={product.title}
-            description={product.description}
-            image={product.image}
-            href={product.href}
-            price={product.price}
-          />
-        ))}
+        {products.length > 0 ? (
+          <div className="contents">
+            {(isSearching ? products : products.slice(0, 3)).map((product) => (
+              <div
+                key={product.id}
+                className="transition-all duration-500 ease-in-out transform animate-fadeIn"
+              >
+                <ProductCard
+                  title={product.title as string}
+                  description={product.description as string}
+                  image={product.image as string}
+                  href={product.href as string}
+                  price={product.price as unknown as string}
+                />
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="col-span-full flex flex-col items-center justify-center py-12">
+            <p className="text-gray-500 text-lg font-medium">
+              No products found.
+            </p>
+          </div>
+        )}
       </div>
+      <style>
+        {`
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          .animate-fadeIn {
+            animation: fadeIn 0.5s;
+          }
+        `}
+      </style>
     </Container>
   );
 };

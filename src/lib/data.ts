@@ -18,7 +18,7 @@ export const trends = [
     description:
       'From bold tableware to cozy throws, our curated homeware collection is designed for gatherings, relaxation, and self-expression. Make every moment at home a celebration of creativity and comfort.',
     buttonText: 'Shop Tableware',
-    image: '/src/assets/images/trends/trends-2.png',
+    image: '/src/assets/images/trends/trends-4.jpg',
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ export const products = [
       'Add warmth and texture to your space with this artisan-crafted throw, inspired by African weaving traditions.',
     image: '/src/assets/images/products/product-1.png',
     href: '#',
-    price: '18,540',
+    price: 18540,
   },
   {
     id: 2,
@@ -47,7 +47,7 @@ export const products = [
       'A modern vase with organic lines—perfect for fresh flowers or as a statement piece on your table or shelf.',
     image: '/src/assets/images/products/product-2.png',
     href: '#',
-    price: '25,540',
+    price: 25540,
   },
   {
     id: 3,
@@ -56,7 +56,70 @@ export const products = [
       'Vibrant patterns meet soft comfort. This cushion cover brings a pop of color and culture to any room.',
     image: '/src/assets/images/products/product-3.png',
     href: '#',
-    price: '12,540',
+    price: 12540,
+  },
+  {
+    id: 4,
+    title: 'Linen Kimono Robe',
+    description:
+      'Relax in style with this lightweight linen kimono, perfect for lounging or layering over your favorite outfit.',
+    image: '/src/assets/images/products/product-4.png',
+    href: '#',
+    price: 22000,
+  },
+  {
+    id: 5,
+    title: 'Woven Cotton Pajama Set',
+    description:
+      'Experience comfort and breathability with this soft cotton pajama set, featuring subtle African-inspired patterns.',
+    image: '/src/assets/images/products/product-5.png',
+    href: '#',
+    price: 19500,
+  },
+  {
+    id: 6,
+    title: 'Embroidered House Slippers',
+    description:
+      'Step into luxury with these cozy slippers, adorned with intricate embroidery for a touch of elegance at home.',
+    image: '/src/assets/images/products/product-6.png',
+    href: '#',
+    price: 8900,
+  },
+  {
+    id: 7,
+    title: 'Classic Bathrobe',
+    description:
+      'Wrap yourself in plush comfort after a bath with this classic robe, designed for everyday relaxation.',
+    image: '/src/assets/images/products/product-1.png',
+    href: '#',
+    price: 16800,
+  },
+  {
+    id: 8,
+    title: 'Patterned Lounge Pants',
+    description:
+      'Unwind in these relaxed-fit lounge pants, featuring bold prints inspired by African textiles.',
+    image: '/src/assets/images/products/product-2.png',
+    href: '#',
+    price: 13200,
+  },
+  {
+    id: 9,
+    title: 'Soft Cotton Nightshirt',
+    description:
+      'Enjoy restful nights in this ultra-soft cotton nightshirt, blending comfort with contemporary style.',
+    image: '/src/assets/images/products/product-3.png',
+    href: '#',
+    price: 11750,
+  },
+  {
+    id: 10,
+    title: 'Heritage Print Headwrap',
+    description:
+      'Add flair to your homewear look with this versatile headwrap, showcasing vibrant heritage prints.',
+    image: '/src/assets/images/products/product-4.png',
+    href: '#',
+    price: 6500,
   },
 ];
 
@@ -136,7 +199,7 @@ export const taglinePrompts = {
       Each trend should have: id, title, description, buttonText.
       Use realistic but fictional data. The title should be short.
       Return only the JSON array.`,
-  products: `Generate 3 homeware products as a JSON array.
+  products: `Generate 10 homeware products as a JSON array.
       Each product should have: id, title, description, href, price in thousands.
       Use realistic but fictional data.
       Return only the JSON array.`,

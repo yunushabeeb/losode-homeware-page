@@ -1,10 +1,12 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { products as defaultProducts } from '../lib/data';
+import { ProviderContext, type ContextType } from '../context/Provider';
 
 // Custom hook for generating products
 export function useProductsGenerator() {
-  const [products, setProducts] = useState(defaultProducts.slice(0, 3));
+  // const [products, setProducts] = useState(defaultProducts.slice(0, 3));
   const [loading, setLoading] = useState(false);
+  const { setProducts } = useContext(ProviderContext) as ContextType;
 
   const generate = async () => {
     setLoading(true);
@@ -35,10 +37,12 @@ export function useProductsGenerator() {
 
       setProducts(productsWithImages);
     } catch {
-      setProducts(defaultProducts.slice(0, 3));
+      // setProducts(defaultProducts.slice(0, 3));
+      console.log('Error generating products. Using default products.');
+      // setProducts(defaultProducts.slice(0, 3));
     }
     setLoading(false);
   };
 
-  return { products, loading, generate };
+  return { loading, generate };
 }

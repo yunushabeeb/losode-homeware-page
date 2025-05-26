@@ -1,9 +1,39 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { navLinks } from '../lib/data';
+import Fuse from 'fuse.js';
+import { ProviderContext, type ContextType } from '../context/Provider';
 
 const Nav = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [search, setSearch] = useState('');
+  // const [results, setResults] = useState(navLinks);
+  const { setIsSearching, products, setProducts } = useContext(
+    ProviderContext,
+  ) as ContextType;
+  const [filteringProducts] = useState(products);
+
+  // Setup Fuse
+  const fuse = new Fuse(filteringProducts, {
+    keys: ['title', 'description'],
+    threshold: 0.4,
+  });
+
+  // Handle search input
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.value === '') {
+      setIsSearching(false);
+    } else {
+      setIsSearching(true);
+    }
+    const value = e.target.value;
+    setSearch(value);
+    if (value.trim() !== '') {
+      setProducts(fuse.search(value).map((res) => res.item));
+    } else {
+      setProducts(filteringProducts); // Reset to original products if search is empty
+    }
+  };
 
   return (
     <div className="py-2 px-4 sm:px-8 bg-white text-black md:bg-black md:text-white transition-colors duration-300">
@@ -126,8 +156,11 @@ const Nav = () => {
               type="text"
               placeholder="Search"
               className="ml-2 outline-none bg-transparent text-black"
+              value={search}
+              onChange={handleSearch}
             />
           </div>
+
           {/* User Icon */}
           <button>
             <svg
@@ -241,6 +274,8 @@ const Nav = () => {
                 placeholder="Search"
                 className="absolute right-0 top-0 mt-8 w-40 px-2 py-1 rounded bg-white text-black outline-none shadow transition-all duration-200"
                 style={{ zIndex: 20 }}
+                value={search}
+                onChange={handleSearch}
                 onBlur={() => setSearchOpen(false)}
               />
             )}
